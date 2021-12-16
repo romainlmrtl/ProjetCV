@@ -6,7 +6,7 @@ $data=yaml_parse($content);
 // echo "</pre>";
 
 foreach($data as $cle=>$val):
-        echo '<li><a href="#'.$val.'">'.$cle.'</a></li>';
+        echo '<li><a href="#'.$val.'">'.$val.'</a></li>';
 endforeach;
 
 ?>

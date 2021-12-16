@@ -31,7 +31,7 @@ foreach($data AS $val){
     echo '<section id="'.$val.'">';
     echo '<div class="headcomp">';
     echo '<header>';
-    echo '<h1>'.$val.'</h1>';
+    echo '<h1>'.$cle.'</h1>';
     echo '</header>';
     echo '</div>';
         include 'php/'.$val.'.php'; 
