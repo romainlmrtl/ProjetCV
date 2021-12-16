@@ -27,14 +27,14 @@
 <?php
 $content=file_get_contents("data/nav.yaml");
 $data=yaml_parse($content);
-foreach($data AS $val){
-    echo '<section id="'.$val.'">';
+foreach($data[0] as $elt){
+    echo '<section id="'.$elt["nomdesection"].'">';
     echo '<div class="headcomp">';
     echo '<header>';
-    echo '<h1>'.$cle.'</h1>';
+    echo '<h1>'.$elt["titre"].'</h1>';
     echo '</header>';
     echo '</div>';
-        include 'php/'.$val.'.php'; 
+        include 'php/'.$elt["nomdesection"].'.php'; 
     echo '</section>';
 }
 ?>
@@ -44,7 +44,7 @@ foreach($data AS $val){
 </footer>
 
 <script>
-window.location.href='#ACCUEIL';
+window.location.href='#accueil';
 </script>
 
 <!--

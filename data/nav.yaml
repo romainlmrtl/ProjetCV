@@ -1,6 +1,19 @@
-ACCUEIL: accueil
-A PROPOS: a propos
-COMPÉTENCES: competences
-EXPÉRIENCES: experiences
-FORMATION: formations
-CONTACT: contact
+-
+  -
+    titre: ACCUEIL
+    nomdesection: accueil
+  -
+    titre: A PROPOS
+    nomdesection: a propos
+  -
+    titre: COMPÉTENCES
+    nomdesection: competences
+  -
+    titre: EXPÉRIENCES
+    nomdesection: experiences
+  -
+    titre: FORMATION 
+    nomdesection: formations
+  -
+    titre: CONTACT
+    nomdesection: contact

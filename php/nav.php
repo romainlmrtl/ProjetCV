@@ -5,8 +5,8 @@ $data=yaml_parse($content);
 // print_r($data);
 // echo "</pre>";
 
-foreach($data as $cle=>$val):
-        echo '<li><a href="#'.$val.'">'.$val.'</a></li>';
+foreach($data[0] as $elt):
+        echo '<li><a href="#'.$elt["nomdesection"].'">'.$elt["titre"].'</a></li>';
 endforeach;
 
 ?>
