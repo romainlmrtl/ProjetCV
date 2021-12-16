@@ -1,0 +1,35 @@
+-
+  -
+    information: nomprenom
+    moiinformation: Romain Lemartinel
+  -
+    information: age
+    moiinformation: 18 ans
+  -
+    information: formation
+    moiinformation: BTS SIO
+  -
+    information: email
+    moiinformation: romainlemartinel@outlook.fr
+  -
+    information: tel
+    moiinformation: 06.28.19.79.97
+  -
+    information: adresse
+    moiinformation: La Boulaye
+  -
+    information: cpville
+    moiinformation: 50520 Le Mesnil Adelée
+-
+  -
+    reseau: Instagram
+    icone : bi bi-instagram
+    lien: #
+  -
+    reseau: Twitter
+    icone : bi bi-twitter
+    lien: https://twitter.com/
+  -
+    reseau: Facebook
+    icone : bi bi-facebook
+    lien: #

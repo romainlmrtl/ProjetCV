@@ -1,0 +1,38 @@
+-
+  -
+    competence: Routage / Brassage CISCO
+    niveau: Intermédiaire
+  -
+    competence: Certification de câble 4 paires 
+    niveau: Intermédiaire
+-
+  -
+    competence: Services Réseaux Window Server 
+    niveau: Intermédiaire
+  -
+    competence: Services Réseaux LINUX 
+    niveau: Débutant
+-
+  -
+    competence: Certification PIX
+    niveau: 766 / 768 points
+  -
+    competence: SecnumAcademie ANSSI
+    niveau: Progression = 75%
+-
+  -
+    competence: HTML
+    niveau: 75%
+    lienimage: https://img.icons8.com/color/100/000000/html-5.png
+  -
+    competence: CSS
+    niveau: 80%
+    lienimage: https://img.icons8.com/color/64/000000/css3.png
+  -
+    competence: PHP
+    niveau: 30%
+    lienimage: https://img.icons8.com/dusk/64/000000/php-logo.png
+  -
+    competence: MYSQL
+    niveau: 25%
+    lienimage: https://img.icons8.com/color/48/000000/mysql-logo.png
