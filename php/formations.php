@@ -2,7 +2,10 @@
 $content=file_get_contents("data/formations.yaml");
 $data=yaml_parse($content);
 
-
+echo '<div class="headcomp">';
+echo '<header>';
+echo '<h1>FORMATIONS</h1>';
+echo '</header>';
 echo '<table class="expflex">';
 echo '<tr class="expbox">';
 foreach($data[0] as $elt):

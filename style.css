@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 *{
   padding: 0;
@@ -27,6 +28,21 @@ body{
   border-left-style:none;
   border-right-style:none;
   border-bottom-style:solid;
+  letter-spacing: 4px;
+  background-color: white;
+}
+
+.headcomp1 header{
+  margin-top: 65px;
+  margin-bottom: 10px;
+  padding: 20px 0px;
+  font-size: 15px;
+  text-align: center;
+  border: rgb(231, 225, 225) 2px ;
+  border-top-style:none;
+  border-left-style:none;
+  border-right-style:none;
+  border-bottom-style:none;
   letter-spacing: 4px;
   background-color: white;
 }
@@ -184,6 +200,55 @@ main {
   height: 500px;
 }
 
+#accugrostitre{
+  font-family: 'Poppins',sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  margin: 20px 40px;
+  margin-top: 60px;
+}
+
+#accueavpara{
+  font-family: 'Poppins',sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 15px 40px;
+  margin-bottom: 30px;
+}
+
+.cvboutton2 {
+  cursor: pointer;
+  text-align: initial;
+  top: 15;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #0554fb;
+  padding: 10px 10px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  margin-left: 40px;
+  font-size: 15px;
+}
+
+.cvboutton2:hover {
+  transition: background-color 0.5s, transform 0.5s;
+  color: #000000;
+  border: solid 2px #0554fb;
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+#accueavpara2{
+  font-size: 15px;
+  font-weight: 200;
+  margin: 35px 40px;
+  margin-bottom: 30px;
+}
+
+
+
 .infoprinc > ul{
   margin: 85px 70px;
 }
@@ -285,14 +350,6 @@ section:target{
   display: block;
 }
 
-section:target(#accueil) > .headcomp header {
-  border-top-style:none;
-  border-left-style:none;
-  border-right-style:none;
-  border-bottom-style:none;
-}
-
-
 section:not(:target){
   display: none;
 }
@@ -339,6 +396,10 @@ input, textarea {
   font-size: 13px;
   font-family: 'Noto Sans', sans-serif;
   padding-left: 10px;
+}
+
+textarea{
+  padding: 5px 10px;
 }
 
 .submit {

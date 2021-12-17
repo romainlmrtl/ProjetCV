@@ -11,6 +11,8 @@
     <script src="https://www.google.com/recaptcha/api.js?render=ICI_LA_CLE_DU_SITE"></script>
 </head>
 <body>
+
+<!-- /// NAVBARRE /// -->
 <nav>
     <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -23,16 +25,13 @@
         <?php include 'php/nav.php'; ?>
     </ul>
 </nav>
+
+<!-- /// GENERATEUR DE SECTIONS /// -->
 <?php
 $content=file_get_contents("data/nav.yaml");
 $data=yaml_parse($content);
 foreach($data[0] as $elt){
     echo '<section id="'.$elt["nomdesection"].'">';
-    echo '<div class="headcomp">';
-    echo '<header>';
-    echo '<h1>'.$elt["titre"].'</h1>';
-    echo '</header>';
-    echo '</div>';
         include 'php/'.$elt["nomdesection"].'.php'; 
     echo '</section>';
 }
@@ -56,10 +55,16 @@ foreach($data[0] as $elt){
     echo '</div>';
     }
     echo '<div class="fooinfo2">';
-    echo '<p><b>En ligne</b></p>
-         <i class="bi bi-instagram" id="footiconreseau" style="color: black;"></i>
-         <i class="bi bi-twitter" id="footiconreseau" style="color: black;"></i>
-         <i class="bi bi-facebook" id="footiconreseau" style="color: black;"></i>';
+    echo '<p><b>En ligne</b></p>';
+    echo '<a href="https://www.instagram.com/romain_lmrtl/" target="_blank>"';
+    echo '<i class="bi bi-instagram" id="footiconreseau" style="color: black;"></i>';
+    echo '</a>';
+    echo '<a href="https://twitter.com/r_lemartinel" target="_blank">';
+    echo '<i class="bi bi-twitter" id="footiconreseau" style="color: black;"></i>';
+    echo '</a>';
+    echo '<a href="https://www.facebook.com/romainlemartinel2003" target="_blank">';
+    echo '<i class="bi bi-facebook" id="footiconreseau" style="color: black;"></i>';
+    echo '</a>';
     echo '</div>';
     echo '</div>';
     ?> 

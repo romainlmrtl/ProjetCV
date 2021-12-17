@@ -2,6 +2,11 @@
 $content=file_get_contents("data/accueil.yaml");
 $data=yaml_parse($content);
 
+        echo '<div class="headcomp1">';
+        echo '<header>';
+        echo '<h1>ACCUEIL</h1>';
+        echo '</header>';
+        echo '</div>';
         echo '<div id="ACCUEIL">';
         echo '<div class="imagearpln">';
         echo '</div>';
@@ -21,9 +26,15 @@ endforeach;
         echo '</div>';
         echo '</div>';
         echo '<div class="infoprinc">';
-        echo '<ul>';
-
-        echo '</ul>';
+        echo '<h1 id="accugrostitre">Bonjour</h1>';
+        echo '<p id="accueavpara">Je suis un geek, un communicant avec un très bon relationnel.</p>';
+        echo '<div class="bouttoncvvv2">';
+        echo '<a  href="images/RomainLemartinel.pdf" target="_blank" class="cvboutton2" aria-disabled="false">';
+        echo '<span class="">TÉLÉCHARGER CV</span>';
+        echo '</a>';
+        echo '<p id="accueavpara2">Étudiant en première année de BTS SIO. Pour ce deuxiéme semestre je choisi l&#8217option <b>réseau</b>. 
+             Dans ce site web vous allez découvrir mon parcour, mes formations et bien plus encore ...</p>';
+        echo '</div>';
         echo '</div>';
         echo '</div>';
         echo '</div>';

@@ -2,7 +2,10 @@
 $content=file_get_contents("data/competences.yaml");
 $data=yaml_parse($content);
 
-
+echo '<div class="headcomp">';
+echo '<header>';
+echo '<h1>COMPETENCES</h1>';
+echo '</header>';
 // ####### Compétences par niveau (débutant, intermédiaire, confirmé, expert)
 echo '<table class="compflexx">';
 echo '<tr class="compbox">';

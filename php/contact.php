@@ -2,6 +2,10 @@
 $content=file_get_contents("data/contact.yaml");
 $data=yaml_parse($content);
 
+echo '<div class="headcomp">';
+echo '<header>';
+echo '<h1>CONTACT</h1>';
+echo '</header>';
 echo '<flex>';
 echo '<div class="boite">';
 echo '<div class="droite">';
