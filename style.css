@@ -16,8 +16,22 @@ body{
   font-family: 'Noto Sans', sans-serif;
 }
 
-/* !!! NAVBARRE !!! */
+/* !!! HEADER EN TITRE !!! */
+.headcomp header{
+  margin-top: 75px;
+  padding: 20px 0px;
+  font-size: 15px;
+  text-align: center;
+  border: rgb(231, 225, 225) 2px ;
+  border-top-style:none;
+  border-left-style:none;
+  border-right-style:none;
+  border-bottom-style:solid;
+  letter-spacing: 4px;
+  background-color: white;
+}
 
+/* !!! NAVBARRE !!! */
 nav{
   z-index: 9999;
   overflow: hidden;
@@ -60,18 +74,8 @@ nav ul li a{
   text-transform: uppercase;
 }
 
-/* !!! ACCUEIL !!! */
-
-.accueilbarre {
-  background-color: #0554fb;
-  width: 70px;
-  height: 7px;
-  border-radius: 5px;
-  margin: 15px 0px;
-  display: flex;
-  justify-content: center;
-}
-
+/* !!!   ACCUEIL    !!! */
+/* !!! ARRIERE PLAN !!! */
 .checkbtn{
   font-size: 30px;
   color: #000000;
@@ -104,10 +108,11 @@ main {
 .imagearpln {  
   width: 870px;
   height: 780px;
-  background: linear-gradient(to left, #e4dccc 60%,#e4dccc 60%);
+  background: linear-gradient(to left, #E6DACE 60%,#E6DACE 60%);
   position: absolute;
 }
 
+/* !!! CARRE MILIEU !!! */
 .carreblanc {
   width: 700px;
   height: 500px;
@@ -117,24 +122,66 @@ main {
   position: relative;
 }
 
+/* !!! DIV GAUCHE !!! */
 .photodemoi {
-  background-color: #f4ece6;
+  background-color: #F4ECE6;
   width: 350px;
   height: 500px;
   box-shadow: -11.31px 11.31px 25px 0px rgba(133, 126, 119, 0.23);
   text-align: center;
+  position:relative;
+}
 
+ .photodemoi1 {
+  border-radius: 200px;
+  margin: 0px 25px;
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
 .accutitre{
   margin-top: 10px;
+  font-weight: 900;
 }
 
+.accueilbarre {
+  background-color: #0554fb;
+  width: 60px;
+  height: 4px;
+  border-radius: 5px;
+  margin: 15px 0px;
+}
+
+.accutitre1{
+  padding-top: 20px;
+  letter-spacing: 3px;
+  font-weight: 50;
+  font-size: 15px;
+  display: block;
+  margin: auto 0px;
+}
+
+.barrebleupropos {
+  background-color: #ffffff;
+  color: #ffffff;
+  position:absolute;
+  width: 350px;
+  padding: 10px 0px;
+  bottom: 0;
+  text-align: center;
+  width:100%;
+}
+
+#iconreseau {
+  font-size: 22px;
+  margin: 15px 10px;
+}
+
+/* !!! DIV DROITE !!! */
 .infoprinc {
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(255, 255, 255);
   width: 350px;
   height: 500px;
-  box-shadow: -11.31px 11.31px 25px 0px rgba(138,131,124,0.23);
 }
 
 .infoprinc > ul{
@@ -149,38 +196,7 @@ main {
   font-size: 17px;
 }
 
-.barrebleupropos {
-  background-color: #c8d9db;
-  color: #ffffff;
-  width: 350px;
-  padding: 10px 0px;
-  bottom: 0;
-  text-align: center;
-  width:100%;
-}
-
-#iconreseau {
-  font-size: 22px;
-  margin: 20px 10px;
-}
-
- .photodemoi1 {
-  border-radius: 200px;
-  margin-top: 15px;
-}
-
-.accroche1 {
-  font-weight: normal;
-  font-family: 'Readex Pro', sans-serif;
-  text-align: center;
-  padding-top: 35px;
-  font-family: "Calibri";
-  font-size:20px;
-  font-weight: 700;
-}
-
 /* !!! A PROPOS !!! */
-
 .proposoui {
   background-color: rgb(255, 255, 255);
   text-align: center;
@@ -196,26 +212,12 @@ main {
   line-height: 25px;
 }
 
-.headcomp header{
-  margin-top: 75px;
-  padding: 20px 0px;
-  font-size: 15px;
-  text-align: center;
-  border: rgb(231, 225, 225) 2px ;
-  border-top-style:none;
-  border-left-style:none;
-  border-right-style:none;
-  border-bottom-style:solid;
-  letter-spacing: 4px;
-  background-color: white;
-}
-
+/* !!! COMPETENCES !!! */
 .compflexx {
   width: 850px;
   margin: 0 auto;
   margin-top: 45px;
 }
-
 
 .compbox{
   padding: 0px 0%;
@@ -273,6 +275,8 @@ main {
   margin-right: 13px;
 }
 
+
+
 section{
   display: none;
 }
@@ -281,49 +285,49 @@ section:target{
   display: block;
 }
 
+section:target(#accueil) > .headcomp header {
+  border-top-style:none;
+  border-left-style:none;
+  border-right-style:none;
+  border-bottom-style:none;
+}
+
 
 section:not(:target){
   display: none;
 }
 
-/*////////// FORMULAIRE ////////////*/
-
-.boite {
-  position: relative;
-  display: flex;
+/*////////// CONTACT ////////////*/
+#contact {
   background-color: #e4dccc;
-  border-radius: 10px;
-  margin: 0 auto;
-  width: 980px; 
-  padding: 30px 30px;
-  
+  height: 800px;
 }
 
-.gauche {
-  padding-right: auto;
-  padding: 0px 40px;
-  background-color: #aec6c9;
-  text-align: left;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+/*////////// FORMULAIRE ////////////*/
+.boite {
+  position: relative;
+  display: block;
+  background-color: #e4dccc;
+  margin: 0 auto;
+  width: 800px; 
+  padding: 10px 10px;
 }
 
 .droite {
   background-color: white;
   padding: 35px;
-  font-size: small;
-  padding-top: 3px;
-  
+  margin-top: 10px;
+  border-radius: 10px;
 }
 
 .barre {
-  height: 35px;
-  width: 580px;
+  height: 30px;
+  width: 710px;
 }
 
 .barre-grosse {
-  height: 175px;
-  width: 580px;
+  height: 145px;
+  width: 710px;
    
 }
 
@@ -332,21 +336,17 @@ input, textarea {
   border-radius: 5px;
   color: #000000;
   text-align: left;
-  font-size: 15px;
+  font-size: 13px;
   font-family: 'Noto Sans', sans-serif;
   padding-left: 10px;
 }
 
-textarea {
-  padding: 10px;
-}
-
 .submit {
   cursor: pointer;
-  padding: 13px 23px;
+  padding: 10px 20px;
   color: white;
   background-color: #595959;
-  margin-top: 15px;
+  margin-top: 5px;
   border-radius: 5px;
   transition: all 0.5s ease 0s;
   
@@ -357,50 +357,64 @@ textarea {
 }
 
 h3 {
-  padding-top: 18px;
-  font-size: 15px;
+  padding-top: 12px;
+  font-size: 14px;
   font-weight: 500;
 }
 
-#formutitre {
-  padding-top: 50px;
+form, #formupara {
+  margin-top: 10px;
+  line-height: 20px;
+  font-size: 11px;
+  color: #595959;
 }
 
-#formutitre, #formupara{
-  padding-right:19%;
-  padding-left: px;
+#formutitre{
+  font-size: 25px;
 }
-
 
 #formupara {
   font-size: larger;
 }
-
 /*///////// FIN FORMULAIRE //////////*/
 
 .basdepage{
-	padding:35px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+	padding:15px 0px;
 	background-color:#ffffff;
 	text-align:center;
   position: absolute;
   bottom:0;
   width:100%;
-  padding-top:35px;
+  padding-top:25px;
   font-size: smaller;
   font-weight: normal;
   font-family: 'Readex Pro', sans-serif;
   color: rgb(70, 70, 109);
 }
 
-#contact {
-  background-color: #e4dccc;
-  height: 800px;
-  text-align: center;
+.fooinfo {
+  display: flex;
+  justify-content: space-between;
 }
 
-/* ///////////// EXPERIENCES ////////////// */
+.fooinfo2 {
+  margin: 0px 25px;
+}
 
-#experiences {
+.fooinfo2, p {
+  margin-bottom: 5px;
+}
+
+#footiconreseau{
+  font-size: 16px;
+  margin: 5px 5px;
+}
+
+/* ///////////// EXPERIENCES et FORMATIONS ////////////// */
+#experiences, #formations {
   background-color: #e4dccc;
   height: 800px;
 }
@@ -410,6 +424,7 @@ h3 {
 }
 
 .expboite {
+  border-radius: 12px;
   display:flex;
   margin: 0 auto;
   justify-content: space-evenly;
@@ -419,6 +434,28 @@ h3 {
   width: 750px;
   height: 250px;
   box-shadow: -11.31px 11.31px 25px 0px rgba(138,131,124,0.23);
+}
+
+.expboite1 {
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 15px 15px;
+  background-color: white;
+  width: 650px;
+  height: 250px;
+  box-shadow: -11.31px 11.31px 25px 0px rgba(138,131,124,0.23);
+}
+
+.expgauche{
+  margin-left: 40px;
+}
+
+.formicon{
+  height: 25px;
+  width: 25px;
+  margin-right: 25px;
 }
 
 .expflex {
@@ -433,17 +470,23 @@ h3 {
 }
 
 .exptitre1{
+  display: flex;
+  align-items: center;
   font-size: 20px;
   color: #0554fb;
 }
 
 .exptitre2{
+  display: flex;
+  align-items: center;
   font-size: 17px;
   margin-top: 10px;
   font-weight: 700;
 }
 
 .exptitre3{
+  display: flex;
+  align-items: center;
   font-size: 15px;
 }
 

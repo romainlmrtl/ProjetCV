@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Présentation Professionnel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"/>
     <script src="https://www.google.com/recaptcha/api.js?render=ICI_LA_CLE_DU_SITE"></script>
 </head>
 <body>
@@ -16,14 +16,13 @@
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <a href="#ACCUEIL">
+        <a href="#accueil">
             <label class="logo" >Romain Lemartinel</label>
         </a>
     <ul>
         <?php include 'php/nav.php'; ?>
     </ul>
 </nav>
-
 <?php
 $content=file_get_contents("data/nav.yaml");
 $data=yaml_parse($content);
@@ -38,14 +37,41 @@ foreach($data[0] as $elt){
     echo '</section>';
 }
 ?>
+</body>
 
+<!-- /// FOOTER /// -->
 <footer class="basdepage",>
-    <p>Copyright © Romain LEMARTINEL - Touts droits réservés.</p>
-</footer>
+    <div class="foogauche">
+        <p>Copyright © Romain LEMARTINEL - Touts droits réservés.</p>
+    </div >
+    <div class="foodroite">
+    <?php
+    $content=file_get_contents("data/accueil.yaml");
+    $data=yaml_parse($content);
+    echo '<div class="fooinfo">';
+    foreach($data[0] as $elt){
+    echo '<div class="fooinfo2">';
+    echo '<p><b>'.$elt["information"].'</b></p>';
+    echo '<p>'.$elt["moiinformation"].'</p>';
+    echo '</div>';
+    }
+    echo '<div class="fooinfo2">';
+    echo '<p><b>En ligne</b></p>
+         <i class="bi bi-instagram" id="footiconreseau" style="color: black;"></i>
+         <i class="bi bi-twitter" id="footiconreseau" style="color: black;"></i>
+         <i class="bi bi-facebook" id="footiconreseau" style="color: black;"></i>';
+    echo '</div>';
+    echo '</div>';
+    ?> 
+    </div>
+</foOter>
+</html>
 
+<!-- Petit Scipt EN JS pour page d'accueil -->
 <script>
 window.location.href='#accueil';
 </script>
+
 
 <!--
 <section id="apropos" class="proposoui">
@@ -62,37 +88,4 @@ window.location.href='#accueil';
     </div>
 </section>
 
-<section id="competences" class="competence">
-    <?php //include 'php/competence.php'; ?>
-</section>
-    
-<section id="experiences" class="experience">
-    <div class="headcomp">
-        <header>
-            <h1>EXPÉRIENCE</h1>
-        </header>
-    </div>
-</section>
-
-<section id="formations">
-    <div class="headcomp">
-        <header>
-            <h1>FORMATIONS</h1>
-        </header>
-    </div>
-</section>
-
-<section id="contact">
-    <div class="headcomp">
-        <header>
-            <h1>CONTACT</h1>
-        </header>
-    </div>
-</section>
-
-<section id="accueil" name="accueil">
-    <?php //include 'php/accueil.php'; ?>
-</section>
-
--->
 
