@@ -87,6 +87,4 @@ if($responseKeys["success"]) {
 else {
     echo 'You are spammer ! Get the @$%K out';
 }
-
-include_once '../vendor/autoload.php';
 ?>

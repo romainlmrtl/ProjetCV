@@ -599,6 +599,30 @@ form, #formupara {
 }
 
 @media (max-width: 1050px){
+
+  .basdepage{
+    width: 100%;
+    display: block;
+    padding:15px 0px;
+    background-color:#ffffff;
+    text-align:center;
+    bottom:0;
+    padding-top:25px;
+  }
+
+  .imagearplnvrmt {
+    display: flex;
+    justify-content: center;
+    }
+
+  .carreblanc {
+    display: block;
+    height: 900px;
+    width: 400px;
+    background-color: brown;
+
+  }
+
   .checkbtn{
     display: block;
     margin-right: 20px;
@@ -638,11 +662,6 @@ form, #formupara {
   /* #check:checked ~ ul{
     left: 0;
   }  */
- 
-  .carreblanc {
-    width: 500px;
-    height: 1500px;
-  }
 }
 
 @media (max-height: 441px){
