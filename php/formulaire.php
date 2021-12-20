@@ -44,7 +44,7 @@ if($responseKeys["success"]) {
     // !!! CONFIGURATION PHPMAILER !!! //
 
     function sendMail(string $to, string $from, string $from_name, string $subject, string $body) {
-        $CONFIG= include 'infomail.php';
+        $CONFIG= include '(Ne pas ouvrir INFO PERSO).php';
         $mail = new PHPMailer(true);  // Crée un nouvel objet PHPMailer
         $mail->IsSMTP(); // active SMTP
         $mail->SMTPDebug = 0;  // debogage: 1 = Erreurs et messages, 2 = messages seulement
@@ -76,7 +76,8 @@ if($responseKeys["success"]) {
 // !!! ENVOI DU MESSAGE !!! //
     try{
         sendMail('romain.lemartinel@sts-sio-caen.info', 'me@gmail.com', $_POST['nom'], 'Test', '<h1>Test</h1><p>Message</p>');
-        echo 'Votre Email a bien été envoyé !';
+        echo 'Votre Email a bien été envoyé !<br>';
+        echo '<a id="retouraccue" href=javascript:history.go(-1)>Retourner sur le site</a>';
     }
     catch (\Exception $e){
         echo $e->getMessage();
@@ -85,6 +86,6 @@ if($responseKeys["success"]) {
 
 // !!! Si un robot envoi un message !!! //
 else {
-    echo 'You are spammer ! Get the @$%K out';
+    echo 'Vous-êtes un spammer, sortez de là !!!';
 }
 ?>

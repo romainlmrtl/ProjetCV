@@ -69,7 +69,7 @@ foreach($data[0] as $elt){
     echo '</div>';
     ?> 
     </div>
-</foOter>
+</footer>
 </html>
 
 <!-- Petit Scipt EN JS pour page d'accueil -->
