@@ -734,12 +734,30 @@ form, #formupara {
   }
 
   .foogauche{
-    margin: 25px 0;
-    padding: 0px 25px;
+    padding: 25px 25px;
   }
 
   .basdepage{
-    margin-top: 290px;
+    margin-top: 240px;
+  }
+
+  #accugrostitre {
+    padding: 35px 15px;
+    padding-bottom: 0px;
+  }
+
+  #accueavpara {
+    margin: 15px 15px;
+    margin-bottom: 30px;
+  }
+
+  .cvboutton2 {
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  #accueavpara2 {
+    margin: 45px 15px;
   }
 }
 
