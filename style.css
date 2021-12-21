@@ -735,10 +735,11 @@ form, #formupara {
 
   .foogauche{
     margin: 25px 0;
+    padding: 0px 25px;
   }
 
   .basdepage{
-    margin-top: 240px;
+    margin-top: 290px;
   }
 }
 
