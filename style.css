@@ -611,8 +611,8 @@ form, #formupara {
 
 @media (max-width: 1015px){
   .imagearpln {
-    width: 440px;
-    height: 780px;
+    width: 100%;
+    height: 380px;
     background: linear-gradient(to left, #E6DACE 60%,#E6DACE 60%);
   }
 
@@ -659,14 +659,16 @@ form, #formupara {
 
 @media (max-width: 850px){
   .imagearpln {
-    width: 320px;
-    height: 1180px;
+    width: 100%;
+    height: 380px;
     background: linear-gradient(to left, #E6DACE 60%,#E6DACE 60%);
     
   }
 
   #accugrostitre {
-    margin: 15px 0;
+    margin: 0px 0px;
+    padding: 20px 40px;
+    padding-top: 40px;
   }
 
   #accueil {
@@ -674,12 +676,12 @@ form, #formupara {
   }
 
   .photodemoi {
-    width: 50vh;
+    width: 45vh;
     margin: 0 auto;
   }
 
   .infoprinc {
-    width: 50vh;
+    width: 45vh;
     margin: 0 auto;
   }
 
