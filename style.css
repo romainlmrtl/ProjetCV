@@ -655,6 +655,7 @@ form, #formupara {
   #check:checked ~ ul{
     left: 0;
   } 
+
 }
 
 @media (max-width: 850px){
@@ -676,12 +677,12 @@ form, #formupara {
   }
 
   .photodemoi {
-    width: 17rem;
+    width: 25rem;
     margin: 0 auto;
   }
 
   .infoprinc {
-    width: 17rem;
+    width: 25rem;
     margin: 0 auto;
   }
 
@@ -707,6 +708,18 @@ form, #formupara {
 
   nav{
     padding: auto;
+  }
+}
+
+@media (max-width: 600px){
+  .photodemoi {
+    width: 17rem;
+    margin: 0 auto;
+  }
+
+  .infoprinc {
+    width: 17rem;
+    margin: 0 auto;
   }
 }
 
