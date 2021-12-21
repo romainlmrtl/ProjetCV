@@ -49,12 +49,12 @@ foreach($data[0] as $elt){
     echo '<div class="fooinfo">';
     foreach($data[0] as $elt){
     echo '<div class="fooinfo2">';
-    echo '<p><b>'.$elt["information"].'</b></p>';
+    echo '<p id="footgras"><b>'.$elt["information"].'</b></p>';
     echo '<p>'.$elt["moiinformation"].'</p>';
     echo '</div>';
     }
     echo '<div class="fooinfo2">';
-    echo '<p><b>En ligne</b></p>';
+    echo '<p id="footgras"><b>En ligne</b></p>';
     echo '<a href="https://www.instagram.com/romain_lmrtl/" target="_blank>"';
     echo '<i class="bi bi-instagram" id="footiconreseau" style="color: black;"></i>';
     echo '</a>';
