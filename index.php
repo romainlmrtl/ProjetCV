@@ -11,7 +11,7 @@
     <script src="https://www.google.com/recaptcha/api.js?render=ICI_LA_CLE_DU_SITE"></script>
 </head>
 <body>
-
+<div class="contenu">
 <!-- /// NAVBARRE /// -->
 <nav>
     <input type="checkbox" id="check">
@@ -36,9 +36,8 @@ foreach($data[0] as $elt){
     echo '</section>';
 }
 ?>
-</body>
 
-<!-- /// FOOTER /// -->
+
 <footer class="basdepage",>
     <div class="foogauche">
         <p>Copyright © Romain LEMARTINEL - Touts droits réservés.</p>
@@ -70,6 +69,11 @@ foreach($data[0] as $elt){
     ?> 
     </div>
 </footer>
+</div>
+</body>
+
+<!-- /// FOOTER /// -->
+
 </html>
 
 <!-- Petit Scipt EN JS pour page d'accueil -->

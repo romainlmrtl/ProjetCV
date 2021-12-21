@@ -15,6 +15,12 @@
 
 body{
   font-family: 'Noto Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenu {
+  flex-grow: 1 0 auto;
 }
 
 /* !!! HEADER EN TITRE !!! */
@@ -135,7 +141,7 @@ main {
   margin-top: 100px;
   display: flex;
   align-items: center;
-  position: relative;
+  position: absolute;
 }
 
 /* !!! DIV GAUCHE !!! */
@@ -145,7 +151,7 @@ main {
   height: 500px;
   box-shadow: -11.31px 11.31px 25px 0px rgba(133, 126, 119, 0.23);
   text-align: center;
-  position:relative;
+  position:relative; 
 }
 
  .photodemoi1 {
@@ -198,6 +204,7 @@ main {
   background-color: rgb(255, 255, 255);
   width: 350px;
   height: 500px;
+  position: relative;
 }
 
 #accugrostitre{
@@ -550,14 +557,15 @@ form, #formupara {
 	padding:15px 0px;
 	background-color:#ffffff;
 	text-align:center;
-  position: absolute;
-  bottom:0;
+  flex-direction: row;
+
   width:100%;
   padding-top:25px;
-  font-size: smaller;
+  font-size:smaller;
   font-weight: normal;
   font-family: 'Readex Pro', sans-serif;
   color: rgb(70, 70, 109);
+  flex-shrink: 0;
 }
 
 .fooinfo {
@@ -582,10 +590,11 @@ form, #formupara {
         MEDIA QUERIES
 ///////////////////////////*/
 
-@media (max-width: 350px){
-  label.logo{
-    font-size: 20px;
-    padding: 0px 15px;
+@media (max-width: 1740px){
+  .imagearpln {
+  width: 500px;
+  height: 780px;
+  background: linear-gradient(to left, #E6DACE 60%,#E6DACE 60%);
   }
 }
 
@@ -599,54 +608,13 @@ form, #formupara {
   }
 }
 
+
 @media (max-width: 1015px){
-
-  #accueil {
-    margin: auto;
+  .imagearpln {
+    width: 440px;
+    height: 780px;
+    background: linear-gradient(to left, #E6DACE 60%,#E6DACE 60%);
   }
-
-  .imagearpln{
-    width: 20vh;
-  }
-
-  .photodemoi {
-    width: 47vh;
-  }
-
-  .infoprinc {
-    position: absolute;
-  }
-
-  .basdepage{
-    background:#ccc;
-
-    position:absolute;
-    
-    bottom:0;
-    
-    width:100%;
-    
-    padding-top:50px;
-    
-    height:50px;
-  }
-
-  .imagearplnvrmt {
-    width: 40vh;
-    }
-
-  .carreblanc {
-    display: block;
-    height: 900px;
-    width: 300px;
-    background-color: brown;
-
-  }
-
-  nav{
-    padding: auto;
-  }
-
 
   .checkbtn{
     display: block;
@@ -684,18 +652,85 @@ form, #formupara {
     color: #0082e6;
   }
 
-  /* #check:checked ~ ul{
+  #check:checked ~ ul{
     left: 0;
-  }  */
+  } 
 }
 
-@media (max-height: 441px){
+@media (max-width: 850px){
+  .imagearpln {
+    width: 320px;
+    height: 1180px;
+    background: linear-gradient(to left, #E6DACE 60%,#E6DACE 60%);
+    
+  }
 
-  ul {
+  #accugrostitre {
+    margin: 15px 0;
+  }
+
+  #accueil {
+    margin: auto;
+  }
+
+  .photodemoi {
+    width: 50vh;
+    margin: 0 auto;
+  }
+
+  .infoprinc {
+    width: 50vh;
+    margin: 0 auto;
+  }
+
+  .basdepage{
+    display: flex;
+    flex-direction: column-reverse;
+    background:rgb(255, 255, 255);
+    width:100%;
+    padding-top:50px;
+    height:200px;
+    font-size:12px;
+  }
+
+  .fooinfo {
+    display: block;
+  }
+
+  .carreblanc {
+    display: block;
+    height: 900px;
+    width: 100%;
+  }
+
+  nav{
+    padding: auto;
+  }
+}
+
+@media (max-width: 450px){
+  .imagearpln {
+    width: 150px;
+    height: 1180px;
+    background: linear-gradient(to left, #E6DACE 60%,#E6DACE 60%);  
+  }
+    
+    ul {
     height: 180px;
     max-height: 180px;
     width: 100%;
     overflow-y: scroll;
    -webkit-overflow-scrolling:touch;
   }
+  
 }
+
+@media (max-width: 350px){
+  label.logo{
+    font-size: 20px;
+    padding: 0px 15px;
+  }
+}
+
+
+
