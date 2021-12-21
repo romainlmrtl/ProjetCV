@@ -712,8 +712,8 @@ form, #formupara {
 
 @media (max-width: 450px){
   .imagearpln {
-    width: 150px;
-    height: 1180px;
+    width: 100%;
+    height: 380px;
     background: linear-gradient(to left, #E6DACE 60%,#E6DACE 60%);  
   }
     
