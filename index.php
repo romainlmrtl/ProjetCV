@@ -11,8 +11,10 @@
     <script src="https://www.google.com/recaptcha/api.js?render=ICI_LA_CLE_DU_SITE"></script>
     <link rel="icon" type="image/png" href="images/favicon.png" />
 </head>
+
 <body>
-<div class="contenu">
+
+<main>
 <!-- /// NAVBARRE /// -->
 <nav>
     <input type="checkbox" id="check">
@@ -37,7 +39,7 @@ foreach($data[0] as $elt){
     echo '</section>';
 }
 ?>
-
+</main>
 
 <footer class="basdepage",>
     <div class="foogauche">
@@ -70,7 +72,6 @@ foreach($data[0] as $elt){
     ?> 
     </div>
 </footer>
-</div>
 </body>
 
 <!-- /// FOOTER /// -->

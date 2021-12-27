@@ -17,10 +17,13 @@ body{
   font-family: 'Noto Sans', sans-serif;
   display: flex;
   flex-direction: column;
+  position: relative;
+  min-height: 100vh;
 }
 
-.contenu {
-  flex-grow: 1 0 auto;
+main{
+  padding-bottom: 2.5rem;
+  margin: 0;
 }
 
 /* !!! HEADER EN TITRE !!! */
@@ -112,14 +115,6 @@ nav ul li a{
   display: none;
 }
 
-main {
-  margin: 3vh auto;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: justify;
-  width: 80%;
-}
-
 .imagearplnvrmt {
   width: 100%;
   height: 780px;
@@ -129,7 +124,7 @@ main {
 
 .imagearpln {  
   width: 870px;
-  height: 780px;
+  height: 820px;
   background: linear-gradient(to left, #E6DACE 60%,#E6DACE 60%);
   position: absolute;
 }
@@ -360,7 +355,7 @@ section:not(:target){
 /* ///////////// EXPERIENCES et FORMATIONS ////////////// */
 #experiences, #formations {
   background-color: #e4dccc;
-  height: 800px;
+  height: 880px;
 }
 
 .bouttoncvvv {
@@ -466,7 +461,7 @@ section:not(:target){
 /*////////// CONTACT ////////////*/
 #contact {
   background-color: #e4dccc;
-  height: 800px;
+  height: 880px;
 }
 
 /*////////// FORMULAIRE ////////////*/
@@ -551,6 +546,7 @@ form, #formupara {
 
 /*//////// FOOTER //////// */
 .basdepage{
+  position: absolute;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -558,7 +554,7 @@ form, #formupara {
 	background-color:#ffffff;
 	text-align:center;
   flex-direction: row;
-
+  bottom: 0;
   width:100%;
   padding-top:25px;
   font-size:smaller;
@@ -593,7 +589,7 @@ form, #formupara {
 @media (max-width: 1740px){
   .imagearpln {
   width: 500px;
-  height: 780px;
+  height: 820px;
   background: linear-gradient(to left, #E6DACE 60%,#E6DACE 60%);
   }
 }
@@ -656,14 +652,43 @@ form, #formupara {
     left: 0;
   } 
 
+  .compbox {
+    flex-direction: column;
+  }
+
+  .compflexx{
+    width: auto;
+  }
+
+  .container{
+    width: 500px;
+    font-size: 15px;
+  }
+
+  .boite {
+    width: 70vw; 
+  }
+  
+  .barre {
+    width: 50vw;
+  }
+  
+  .barre-grosse {
+    width: 50vw;
+     
+  }
 }
 
-@media (max-width: 850px){
+@media (max-width: 895px){
   .imagearpln {
     width: 100%;
     height: 380px;
     background: linear-gradient(to left, #E6DACE 60%,#E6DACE 60%);
     
+  }
+  
+  body {
+    min-height: 135vh;
   }
 
   #accugrostitre {
@@ -759,6 +784,14 @@ form, #formupara {
   #accueavpara2 {
     margin: 45px 15px;
   }
+
+  body {
+    min-height: 140vh;
+  }
+
+  .submit {
+    margin-top: -11px;
+  }
 }
 
 @media (max-width: 450px){
@@ -774,6 +807,22 @@ form, #formupara {
     width: 100%;
     overflow-y: scroll;
    -webkit-overflow-scrolling:touch;
+  }
+
+  .droite {
+    padding: 10px;
+  }
+
+  #rc-imageselect,.g-recaptcha {
+    transform:scale(0.60);
+    -webkit-transform:scale(0.60);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+
+  }
+
+  body {
+    min-height: 200vh;
   }
   
 }
